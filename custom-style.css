@@ -1,0 +1,53 @@
+.dep-types-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-top: 1px dashed #D6D6D6;
+    border-bottom: 1px dashed #D6D6D6;
+}
+
+.dep-types-group label {
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #1B1C1D;
+}
+
+.dep-types-group label.label-hd {
+    font-weight: 500;
+}
+
+.dep-types-group .custom-radio-group {
+    display: flex;
+    gap: 15px;
+    background-color: #F4F5F6;
+    flex: 1;
+    padding: 10px 20px;
+}
+
+.dep-types-group .custom-radio-group .custom-control {
+    flex: 1;
+}
+
+.custom-control-label:before {
+    border-color: #D6D6D6;
+}
+
+.custom-control-input:checked~.custom-control-label:before {
+    color: #fff;
+    border-color: #D6D6D6;
+    background-color: #fff;
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-label:after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2.5' fill='rgba(5, 159, 217, 1)'/%3e%3c/svg%3e");
+
+}
+
+.custom-control-label:after {
+    background: center center
+}
+
+.custom-control-input:focus~.custom-control-label:before {
+    box-shadow: none;
+}

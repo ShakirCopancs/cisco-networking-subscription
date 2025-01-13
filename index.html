@@ -19,31 +19,27 @@
     <div class="row ng-tns-c121-0 wf-main-container">
 
       <div class="col-md-8 wf-main-container">
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-          Launch demo modal
-        </button>
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
+        <form>
+          <div class="form-group dep-types-group">
+            <label class="label-hd col-md-4 p-0">Choose your Deployment Type</label>
+            <div class="custom-radio-group ">
+              <div class="custom-control custom-radio">
+                <input type="radio" id="routingOption" name="deploymentType" class="custom-control-input" checked>
+                <label class="custom-control-label" for="routingOption">
+                  Cisco Secure Catalyst Routing
+                </label>
               </div>
-              <div class="modal-body">
-                ...
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="sdWanOption" name="deploymentType" class="custom-control-input">
+                <label class="custom-control-label" for="sdWanOption">
+                  Cisco Secure Catalyst SD-WAN
+                </label>
               </div>
             </div>
+
           </div>
-        </div>
+        </form>
+
       </div>
 
 
