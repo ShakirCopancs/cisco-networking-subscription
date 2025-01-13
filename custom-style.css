@@ -54,3 +54,48 @@
 }
 
 /* ---Choose your Deployment Type End--- */
+
+.customModal .modal-dialog .modal-header {
+    background-color: #F0F7FC;
+    padding: 15px 24px;
+}
+
+.customModal .modal-dialog .modal-header .close {
+    font-size: 1.8rem;
+    opacity: .4;
+    line-height: 1.2rem;
+}
+
+.customModal .modal-content .modal-body {
+    padding: 15px 24px;
+}
+
+.customModal .modal-footer {
+    padding: 15px 24px 15px;
+
+}
+
+.customModal .modal-footer .btn {
+    line-height: normal;
+    padding: 6px 20px 7px;
+    font-size: 14px;
+}
+
+.customAlert.alert.alert-warning {
+    border: none;
+    background-color: #FEF7EC;
+    border-left: .175rem solid #C6800F;
+}
+
+.alert h5 {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.text-content-primary {
+    color: #1B1C1D !important;
+}
+
+.fs-14 {
+    font-size: 14px !important;
+}
