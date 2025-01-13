@@ -1,3 +1,4 @@
+/* ---Choose your Deployment Type--- */
 .dep-types-group {
     display: flex;
     align-items: center;
@@ -51,3 +52,5 @@
 .custom-control-input:focus~.custom-control-label:before {
     box-shadow: none;
 }
+
+/* ---Choose your Deployment Type End--- */
