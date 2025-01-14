@@ -214,14 +214,12 @@
     padding: 6px 20px 7px;
     font-size: 14px;
 }
-.prd-card-btn-group .btn.disabled{
+.prd-card-btn-group .btn.disabled, .prd-card-btn-group .btn.disabled:hover{
     background-color:#EBEBEB;
     color: #8E8E8E;
     border-color: #EBEBEB;
 }
-.prd-card-btn-group .btn.disabled:hover{
-    display: none;
-}
+
 
 .prd-card-lists .invalid-badge {
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" fill="none"><path fill="%23fff" d="M0 .594h12v12H0z"/><path d="M6 1.344a5.256 5.256 0 0 0-5.25 5.25A5.256 5.256 0 0 0 6 11.844a5.256 5.256 0 0 0 5.25-5.25A5.256 5.256 0 0 0 6 1.344Zm.36 7.86a.376.376 0 0 1-.375.375.376.376 0 0 1-.375-.375v-3c0-.207.169-.375.375-.375s.375.168.375.375v3Zm-.364-4.11a.562.562 0 1 1-.001-1.124.562.562 0 0 1 .001 1.124Z" fill="%23E3241B"/></svg>');
