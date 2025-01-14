@@ -99,9 +99,19 @@
 .fs-14 {
     font-size: 14px !important;
 }
-.nav.nav-pills{
+
+.fs-12 {
+    font-size: 12px !important;
+}
+
+.font-weight-500 {
+    font-weight: 500 !important;
+}
+
+.nav.nav-pills {
     gap: 12px;
 }
+
 .nav-pills .nav-link {
     padding: 10px 16px;
     min-width: 138px;
@@ -111,69 +121,101 @@
     color: #1B1C1D;
     border-radius: 4px;
     border: 1px solid #D6D6D6;
-    background: transparent; 
+    background: transparent;
 }
-.nav-pills .nav-link.active{
-background: rgba(5, 159, 217, 0.30);
-border-color: rgba(5, 159, 217, 0.30);
-color: #1B1C1D;
+
+.nav-pills .nav-link.active {
+    background: rgba(5, 159, 217, 0.30);
+    border-color: rgba(5, 159, 217, 0.30);
+    color: #1B1C1D;
 }
 
 
-.router-card-list{
+
+
+.prd-card-lists .prd-card-content {
+    padding: 12px 16px;
     border-radius: 4px;
     border: 1px solid #D6D6D6;
-    padding: 0 16px;
-    cursor: pointer;
-    gap: 16px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-}
-.router-card-list.active{
-    border-color:#059FD9;
-    box-shadow: 0 0 2px #059FD9;  
-}
-.router-card-list:hover{
-    border-color:#059FD9;
-    box-shadow: 0 0 2px #059FD9;  
-}
-.router-card-list .router-card-performance-description {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    flex: 4;
-}
-.router-card-list .router-card-performance-description .perfomance-text{
-    font-size: 16px;
-font-weight: 500;
-color: #1B1C1D;
-}
-.router-card-list .product-details{
-display: flex;
-gap: 48px;
-}
-.router-card-list .text-muted{
-    font-size: 12px;
-font-style: normal;
-font-weight: 500;
-color:#606162
-}
-.router-card-list .number-input{
-    width: 50px;
-    border-radius: 4px;
-    border: 1px solid #D6D6D6;
-    padding: 4px 16px;
+    gap: 32px;
+    margin-top: 8px;
+    cursor: pointer;
+    color: #1B1C1D;
+    font-size: 14px;
 }
 
-.router-card-list .router-card-btn-group {
+.prd-card-lists .prd-card-content:hover,
+.prd-card-lists .prd-card-content.active {
+    border-color: #059FD9;
+    box-shadow: #059FD9 0 0 0 1px inset;
+}
+
+.prd-card-lists .prd-card-info {
     display: flex;
+    gap: 16px;
     flex: 1;
-    justify-content: end;
-} 
-.ellipsis-text{
-    white-space: nowrap;      
-    overflow: hidden;          
-    text-overflow: ellipsis;
-    width: 100%;       
+    width: 40%;
+}
+
+.prd-card-lists .prd-card-info h6 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.prd-card-lists .text-muted {
+    color: #606162 !important;
+}
+
+.prd-card-lists .prd-card-info .prd-card-media {
+    width: 95px;
+
+}
+
+.prd-card-lists .prd-card-info .prd-card-media img {
+    max-width: 100%;
+    height: auto;
+}
+
+.prd-card-lists .prd-card-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.prd-card-lists .prd-card-btn-group {
+    display: flex;
+    align-items: center;
+}
+
+.prd-card-lists .number-input {
+    border-radius: 4px;
+    border: 1px solid #D6D6D6;
+    text-align: center;
+    color: #1B1C1D;
+    padding: 5px;
+    width: 55px;
+    height: 35px;
+}
+
+.prd-card-lists .prd-card-title {
+    flex: 1;
+    overflow: hidden;
+}
+
+.prd-card-btn-group .btn {
+    line-height: normal;
+    padding: 6px 20px 7px;
+    font-size: 14px;
+}
+
+.prd-card-lists .invalid-badge {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" fill="none"><path fill="%23fff" d="M0 .594h12v12H0z"/><path d="M6 1.344a5.256 5.256 0 0 0-5.25 5.25A5.256 5.256 0 0 0 6 11.844a5.256 5.256 0 0 0 5.25-5.25A5.256 5.256 0 0 0 6 1.344Zm.36 7.86a.376.376 0 0 1-.375.375.376.376 0 0 1-.375-.375v-3c0-.207.169-.375.375-.375s.375.168.375.375v3Zm-.364-4.11a.562.562 0 1 1-.001-1.124.562.562 0 0 1 .001 1.124Z" fill="%23E3241B"/></svg>');
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    padding-left: 20px;
+    border-left: 1px solid #D6D6D6;
+    margin-left: 5px;
 }
