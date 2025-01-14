@@ -118,19 +118,59 @@ background: rgba(5, 159, 217, 0.30);
 border-color: rgba(5, 159, 217, 0.30);
 color: #1B1C1D;
 }
-.router-card{
+
+
+.router-card-list{
     border-radius: 4px;
     border: 1px solid #D6D6D6;
     padding: 0 16px;
+    cursor: pointer;
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.router-card.active{
+.router-card-list.active{
     border-color:#059FD9;
     box-shadow: 0 0 2px #059FD9;  
 }
-.router-card:hover{
+.router-card-list:hover{
     border-color:#059FD9;
     box-shadow: 0 0 2px #059FD9;  
 }
+.router-card-list .router-card-performance-description {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 4;
+}
+.router-card-list .router-card-performance-description .perfomance-text{
+    font-size: 16px;
+font-weight: 500;
+color: #1B1C1D;
+}
+.router-card-list .product-details{
+display: flex;
+gap: 48px;
+}
+.router-card-list .text-muted{
+    font-size: 12px;
+font-style: normal;
+font-weight: 500;
+color:#606162
+}
+.router-card-list .number-input{
+    width: 50px;
+    border-radius: 4px;
+    border: 1px solid #D6D6D6;
+    padding: 4px 16px;
+}
+
+.router-card-list .router-card-btn-group {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+} 
 .ellipsis-text{
     white-space: nowrap;      
     overflow: hidden;          
