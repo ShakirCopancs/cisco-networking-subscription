@@ -217,7 +217,10 @@
 .prd-card-btn-group .btn.disabled{
     background-color:#EBEBEB;
     color: #8E8E8E;
-    border: transparent;
+    border-color: #EBEBEB;
+}
+.prd-card-btn-group .btn.disabled:hover{
+    display: none;
 }
 
 .prd-card-lists .invalid-badge {
