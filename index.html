@@ -21,6 +21,7 @@
 
       <div class="col-md-8 wf-main-container">
         <form>
+          <div class="pb-1">
           <div class="form-group dep-types-group">
             <label class="label-hd col-md-4 p-0">Choose your Deployment Type</label>
             <div class="custom-radio-group ">
@@ -39,25 +40,37 @@
             </div>
 
           </div>
+        </div>
         </form>
 
         <h5>Choose your Platform Class</h5>
-        <ul class="nav nav-pills">
+        <ul class="nav nav-pills platform-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="javascript:void(0)" onclick="showContent(1)">Small</a>
+            <a class="nav-link " href="javascript:void(0)" onclick="showContent(1)">
+              <span><i class="gird-icon small-icon"></i>Small</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)" onclick="showContent(2)">Medium</a>
+            <a class="nav-link" href="javascript:void(0)" onclick="showContent(2)"><i class="gird-icon medium-icon"></i>Medium</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)" onclick="showContent(3)">Large</a>
+            <a class="nav-link" href="javascript:void(0)" onclick="showContent(3)"><i class="gird-icon large-icon"></i>Large</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)" onclick="showContent(4)">X-Large</a>
+            <a class="nav-link active" href="javascript:void(0)" onclick="showContent(4)">
+              <i class="gird-icon x-large-icon"></i>X-Large</a>
           </li>
         </ul>
 
-        <div id="content1" class="content mt-3 pt-1">
+        <div id="content1" class="content mt-3 pt-1" style="display:none;">
+          <p>Coming Soon content.... </p>
+        </div>
+        <div id="content2" class="content mt-3 pt-1" style="display:none;">
+          <p>Coming Soon content.... </p>
+        </div>
+        <div id="content3" class="content mt-3 pt-1" style="display:none;">
+          <p>Coming Soon content.... </p>
+        </div>
+        <div id="content4" class="content mt-3 pt-1" >
           <h5>Choose your Model</h5>
           <div class="prd-card-lists">
             <div class="prd-card-content">
@@ -82,7 +95,7 @@
                 </div>
                 <div class="d-flex flex-column justify-content-around">
                   <p class="text-muted mb-1 fs-12 font-weight-500">Quantity</p>
-                  <input type="number" class="number-input" value="10">
+                  <input type="number" class="number-input" value="10" data-toggle="modal" data-target="#reset-config-modal">
                 </div>
                 <div class="d-flex flex-column justify-content-around">
                   <p class="text-muted mb-1 fs-12 font-weight-500">Unit List Price</p>
@@ -93,51 +106,107 @@
                 <button class="btn btn-primary rounded-pill">Configure</button>
               </div>
             </div>
-          </div>
-          <!-- <div class="router-card bg-white active" data-toggle="modal" data-target="#reset-config-modal">
-          <div class=" router-card-list">
-            <div class="router-card-performance-description">
-              <div>
-                <img src="./img/router-img.svg" alt="Router C8570-G2" class="router-img">
-              </div>
-                <div>
-                  <h6 class="mb-0 perfomance-text">High-performance Networking Router</h6>
-                  <p class=" text-muted mb-1">High-density Router</p>
-                  <p class=" text-muted mb-0">C8570-G2 <span class="invalid-badge text-danger">Invalid</span></p>
+            <div class="prd-card-content">
+              <div class="prd-card-info">
+                <div class="prd-card-media">
+                  <img src="./img/router-img-b.svg" alt="Router C8570-G2" class="router-img">
+                </div>
+                <div class="prd-card-title">
+                  <h6 class="mb-1 text-content-primary  text-truncate">High-performance, network solution with 25 Gbps Ethernet
+
+                  </h6>
+                  <p class=" text-muted mb-1 fs-12">High-density Router</p>
+                  <p class=" text-muted mb-0 fs-12 font-weight-500">C8570-G2
+                  </p>
                 </div>
               </div>
-              <div class="product-details">
-              <div class="d-flex flex-column justify-content-around">
-                  <p class="text-muted mb-1">Estimated Lead Time</p>
-                  <p class="mb-0">21 Days</p>
+              <div class="prd-card-detail">
+                <div class="d-flex flex-column justify-content-around">
+                  <p class="text-muted mb-1 fs-12 font-weight-500">Estimated Lead Time</p>
+                  <p class="mb-0 font-weight-500">21 Days</p>
+                </div>
+                <div class="d-flex flex-column justify-content-around">
+                  <p class="text-muted mb-1 fs-12 font-weight-500">Quantity</p>
+                  <input type="number" class="number-input" value="0" data-toggle="modal" data-target="#reset-config-modal">
+                </div>
+                <div class="d-flex flex-column justify-content-around">
+                  <p class="text-muted mb-1 fs-12 font-weight-500">Unit List Price</p>
+                  <p class="mb-0 font-weight-500">USD 450</p>
+                </div>
               </div>
-              <div class="d-flex flex-column justify-content-around">
-                  <p class="text-muted mb-0">Quantity</p>
-                  <input type="number" class="number-input" value="10">
-              </div>
-              <div class="d-flex flex-column justify-content-around">
-                  <p class="text-muted mb-1">Unit List Price</p>
-                  <p class="mb-0">USD 400</p>
+              <div class="prd-card-btn-group ">
+                <button class="btn btn-primary rounded-pill disabled">Configure</button>
               </div>
             </div>
-              <div class="router-card-btn-group ">
-                <button class="btn btn-primary rounded-pill">Configure</button>
+            <div class="prd-card-content">
+              <div class="prd-card-info">
+                <div class="prd-card-media">
+                  <img src="./img/router-img-c.svg" alt="Router C8570-G2" class="router-img">
+                </div>
+                <div class="prd-card-title">
+                  <h6 class="mb-1 text-content-primary  text-truncate">High-speed router with 10Gbps Ethernet
+
+                  </h6>
+                  <p class=" text-muted mb-1 fs-12">High-density Router</p>
+                  <p class=" text-muted mb-0 fs-12 font-weight-500">C8550-G2
+                  </p>
+                </div>
               </div>
+              <div class="prd-card-detail">
+                <div class="d-flex flex-column justify-content-around">
+                  <p class="text-muted mb-1 fs-12 font-weight-500">Estimated Lead Time</p>
+                  <p class="mb-0 font-weight-500">21 Days</p>
+                </div>
+                <div class="d-flex flex-column justify-content-around">
+                  <p class="text-muted mb-1 fs-12 font-weight-500">Quantity</p>
+                  <input type="number" class="number-input" value="0" data-toggle="modal" data-target="#reset-config-modal">
+                </div>
+                <div class="d-flex flex-column justify-content-around">
+                  <p class="text-muted mb-1 fs-12 font-weight-500">Unit List Price</p>
+                  <p class="mb-0 font-weight-500">USD 200</p>
+                </div>
+              </div>
+              <div class="prd-card-btn-group ">
+                <button class="btn btn-primary rounded-pill disabled">Configure</button>
+              </div>
+            </div>
+            <div class="prd-card-content">
+              <div class="prd-card-info">
+                <div class="prd-card-media">
+                  <img src="./img/router-img-d.svg" alt="Router C8570-G2" class="router-img">
+                </div>
+                <div class="prd-card-title">
+                  <h6 class="mb-1 text-content-primary  text-truncate">Scalable router with 1/10Gbps Ethernet
+
+                  </h6>
+                  <p class=" text-muted mb-1 fs-12">High-density Router</p>
+                  <p class=" text-muted mb-0 fs-12 font-weight-500">C8455-G2
+                  </p>
+                </div>
+              </div>
+              <div class="prd-card-detail">
+                <div class="d-flex flex-column justify-content-around">
+                  <p class="text-muted mb-1 fs-12 font-weight-500">Estimated Lead Time</p>
+                  <p class="mb-0 font-weight-500">21 Days</p>
+                </div>
+                <div class="d-flex flex-column justify-content-around">
+                  <p class="text-muted mb-1 fs-12 font-weight-500">Quantity</p>
+                  <input type="number" class="number-input" value="0" data-toggle="modal" data-target="#reset-config-modal" >
+                </div>
+                <div class="d-flex flex-column justify-content-around">
+                  <p class="text-muted mb-1 fs-12 font-weight-500">Unit List Price</p>
+                  <p class="mb-0 font-weight-500">USD 200</p>
+                </div>
+              </div>
+              <div class="prd-card-btn-group ">
+                <button class="btn btn-primary rounded-pill disabled">Configure</button>
+              </div>
+            </div>
           </div>
-      </div> -->
-        </div>
-        <div id="content2" class="content mt-3 pt-1" style="display:none;">
-          <p>content.....2</p>
-        </div>
-        <div id="content3" class="content mt-3 pt-1" style="display:none;">
-          <p>content.....3</p>
-        </div>
-        <div id="content4" class="content mt-3 pt-1" style="display:none;">
-          <p>content.....4</p>
         </div>
         <div
           class="col-4 right-panel rightPanCls sticky ng-tns-c121-0 ng-trigger ng-trigger-childAnimation sp-right-panel-accord">
-          dsds
+          
         </div>
       </div>
     </div>
