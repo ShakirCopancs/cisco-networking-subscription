@@ -42,7 +42,7 @@
 }
 
 .custom-radio .custom-control-input:checked~.custom-control-label:after {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2.5' fill='rgba(5, 159, 217, 1)'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml;base64,CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSItNCAtNCA4IDgiPgogIDxjaXJjbGUgcj0iMi41IiBmaWxsPSJyZ2JhKDUsIDE1OSwgMjE3LCAxKSIgLz4KPC9zdmc+Cg==");
 
 }
 
@@ -265,19 +265,19 @@
 }
 
 .small-icon {
-background-image: url(./img/small-icon.svg);
+    background-image: url(./img/small-icon.svg);
 }
 
 .medium-icon {
-background-image: url(./img/medium-icon.svg);
+    background-image: url(./img/medium-icon.svg);
 }
 
 .large-icon {
-background-image: url(./img/large-icon.svg);
+    background-image: url(./img/large-icon.svg);
 }
 
 .x-large-icon {
-background-image: url(./img/x-large-icon.svg);
+    background-image: url(./img/x-large-icon.svg);
 }
 
 .icon-right-check {
