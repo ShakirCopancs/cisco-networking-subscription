@@ -293,29 +293,3 @@
     height: 16px;
     display: inline-block;
 }
-
-
-
-
-
-.platform-nav input[type="radio"] {
-    display: none;
-}
-
-.platform-nav input[type="radio"]:checked+.platform-nav-link {
-    background: rgba(5, 159, 217, 0.30);
-    border-color: rgba(5, 159, 217, 0.30);
-    color: #1B1C1D;
-}
-
-.platform-nav input[type="radio"]:checked+.platform-nav-link:before {
-    position: absolute;
-    right: 10px;
-    background-image: url('data:image/svg+xml,<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.64008 13.0507C6.51008 13.0507 6.38508 13.0007 6.29008 12.9057L2.74008 9.42072C2.54508 9.22572 2.54008 8.91072 2.73508 8.71572C2.93008 8.51572 3.24508 8.51572 3.44008 8.71072L6.58008 11.7957L12.7101 3.60572C12.8751 3.38572 13.1901 3.34072 13.4101 3.50572C13.6301 3.67072 13.6751 3.98572 13.5101 4.20572L7.04008 12.8507C6.95508 12.9657 6.82008 13.0407 6.68008 13.0507C6.66508 13.0507 6.65508 13.0507 6.64008 13.0507Z" fill="%231B1C1D"/></svg>');
-    background-repeat: no-repeat;
-    padding-left: 20px;
-    background-position: 4% center;
-    width: 17px;
-    height: 16px;
-    content: "";
-}
